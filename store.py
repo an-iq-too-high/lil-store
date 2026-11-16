@@ -9,6 +9,7 @@ door = 350
 purchases = 0
 inventory = []
 gpc = 750
+tv = 600
 sells = 0
 codes = ["FREE100", "CASHBACK15", "DOORDEAL"]
 
@@ -18,7 +19,7 @@ while True:
 
         if market in ["buy", "1"]:
             os.system("clear")
-            buy = int(input(f"Here's the items! \n[1] Toilet Paper ${tp} \n[2] Car ${car} \n[3] Human ${human} \n[4] Door ${door} \n[5] Gaming PC \nWhat item do you want? (1-5) "))
+            buy = int(input(f"Here's the items! \n[1] Toilet Paper ${tp} \n[2] Car ${car} \n[3] Human ${human} \n[4] Door ${door} \n[5] Gaming PC ${gpc} \n[6] Flat-Screen TV ${tv} \nWhat item do you want? (1-6) "))
 
             if buy == 1:
                 os.system("clear")
@@ -118,6 +119,25 @@ while True:
                     input("Done! Press enter to go back!")
                     os.system("clear")
                     continue
+                elif buy == 6:
+                    os.system("clear")
+                    print("Please wait...")
+
+                    if money < tv:
+                        print("YA DONT HAVE ENOUGH MONEY, EH?")
+                        break
+                    else:
+                        money -= tv
+                        inventory.append("Tv")
+                        purchases += 1
+
+                        with open("history.txt", "a") as file:
+                            file.write(f"Bought: Flat-Screen TV (-${tv})\n")
+
+                        os.system("clear")
+                        input("Done! Press enter to go back!")
+                        os.system("clear")
+                        continue
 
             else:
                 os.system("clear")
@@ -220,7 +240,7 @@ while True:
 
         elif market in ["help", "6"]:
             os.system("clear")
-            print("Commands: buy, sell, inventory, transactions, money, help, exit")
+            print("Commands: buy, sell, inventory, transactions, money, help, exit, sells, purchases")
             time.sleep(5)
             os.system("clear")
 
