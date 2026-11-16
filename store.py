@@ -295,11 +295,11 @@ while True:
             elif code == "CASHBACK15" and code in codes:
                 os.system("clear")
                 print("Please wait...")
-                tp *= 0.15
-                car *= 0.15
-                human *= 0.15
-                gpc *= 0.15
-                door *= 0.15
+                tp *= 0.85
+                car *= 0.85
+                human *= 0.85
+                gpc *= 0.85
+                door *= 0.85
                 codes.remove(code)
                 os.system("clear")
                 input("SUCCESS! You unlocked 15% cashback!")
