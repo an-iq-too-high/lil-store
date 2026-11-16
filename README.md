@@ -7,9 +7,9 @@ to open this option, either say “```buy```” or “```1```” to activate, th
 ## Sell
 to open this option, either say “```sell```” or “```2```” to activate, in order to sell, you must already buy/have the item in your inventory.
 ## Inventory
-to open this option, either say “```inventory```” or “```3```” to activate, this will tell you how much stuff you have.
+to open this option, either say “```inventory```” or “```3```” to activate, this will tell you what stuff you have.
 ## Transactions
-to open this option, either say “```transactions```” or “```4```” to activate, this will tell you what you made over the trials.
+to open this option, either say “```transactions```” or “```4```” to activate, this will tell you what you made over the time, this uses saving.
 ## Money
 to open this option, either say “```money```” or “```5```” to activate, this will simply tell you how much $$$ you have.
 ## Help
