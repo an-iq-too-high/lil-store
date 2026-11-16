@@ -1,5 +1,5 @@
 # Store
-this is a project, DO NOT TAKE THIS SERIOUSLY.
+this is a project, DO NOT TAKE THIS SERIOUSLY. 
 
 # Options
 ## Buy
