@@ -304,5 +304,5 @@ while True:
             continue
 
     except ValueError:
-        print("Enter a number! Now exiting…")
+        print("Enter a number! Now exiting……")
         break
