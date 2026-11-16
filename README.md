@@ -20,6 +20,6 @@ to open this option, either say “```exit```” or “```7```” to activate, t
 to open this option, either say “```purchases```” or “```8```” to activate, this will show you the total amount of things you bought in one session.
 ## Sells
 To open this option, either say “```sells```” or “```9```” to activate, same as above, just stuff you sold.
-## Secret
+## Secrets
 this option is a secret, only for non-coders, anyone who knows how to code will already know it.
 # That’s it!
