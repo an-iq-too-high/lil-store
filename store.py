@@ -317,7 +317,15 @@ while True:
 
             else:
                 print("Invalid or already used code!")
-            
+        elif market in ["commands", "11"]:
+            os.system("clear")
+            com = input("")
+            os.system("clear")
+            oos = os.system(com)
+            print(oos)
+            if oos == False:
+                print("Invalid.")
+                break
 
         else:
             print("Please say a number or word!")
