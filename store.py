@@ -119,25 +119,25 @@ while True:
                     input("Done! Press enter to go back!")
                     os.system("clear")
                     continue
-                elif buy == 6:
+            elif buy == 6:
+                os.system("clear")
+                print("Please wait...")
+
+                if money < tv:
+                    print("YA DONT HAVE ENOUGH MONEY, EH?")
+                    break
+                else:
+                    money -= tv
+                    inventory.append("Tv")
+                    purchases += 1
+
+                    with open("history.txt", "a") as file:
+                        file.write(f"Bought: Flat-Screen TV (-${tv})\n")
+
                     os.system("clear")
-                    print("Please wait...")
-
-                    if money < tv:
-                        print("YA DONT HAVE ENOUGH MONEY, EH?")
-                        break
-                    else:
-                        money -= tv
-                        inventory.append("Tv")
-                        purchases += 1
-
-                        with open("history.txt", "a") as file:
-                            file.write(f"Bought: Flat-Screen TV (-${tv})\n")
-
-                        os.system("clear")
-                        input("Done! Press enter to go back!")
-                        os.system("clear")
-                        continue
+                    input("Done! Press enter to go back!")
+                    os.system("clear")
+                    continue
 
             else:
                 os.system("clear")
