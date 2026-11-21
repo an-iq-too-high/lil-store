@@ -334,3 +334,6 @@ while True:
     except ValueError:
         print("Enter a number! Now exiting……")
         break
+    except PermissionError:
+        print("Permission denied.")
+        break
